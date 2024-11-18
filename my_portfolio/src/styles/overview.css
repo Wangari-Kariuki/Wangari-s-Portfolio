@@ -1,0 +1,63 @@
+.body {
+    max-width:100%;
+    max-height: fit-content;
+    /* display: flex;
+    justify-content: center; */
+}
+.topcontainer {
+    height : 50vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+    padding: 10px;
+}
+.text-box{
+
+    flex-direction: column;
+    color: #ffff;
+    padding: 10px;
+}
+.text-box h2 {
+    color: #E431B8;
+    cursor: pointer;
+    transition: all 1.5s; /* Smooth transition effect */
+}
+
+/* Fix the hover selector */
+.text-box h2:hover {
+    transform: rotateY(180deg); /* Correct syntax: use 'deg' for degrees */
+}
+
+.cont-col-2{
+    /* float:right */
+    display: flex;
+    flex-direction:column;
+    gap: 14px;
+    padding: 10px;
+    float: right;
+}
+.cont-col-1{
+    float:left;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    border-right: 2px solid  #E431B8;
+
+}
+.imagebox{
+    background-color: beige;
+    padding:50px;
+    float:center;
+}
+
+.bottomcontainer{
+    background-color: rgb(24, 5, 24);
+    color: #ffff;
+    width: 100%;
+}

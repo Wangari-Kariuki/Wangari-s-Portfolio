@@ -1,0 +1,28 @@
+@keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    75% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .wave {
+    display: inline-block;
+    transform-origin: 50%; /* Adjust origin for a realistic wave effect */
+    animation: wave 4.0s infinite;
+    background-image: linear-gradient(#E431B8, #7a2766,#4d143f);
+    width: 100%;
+  }
+  .wave-conatiner{
+    background-color: black;
+  }
