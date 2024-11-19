@@ -1,6 +1,6 @@
 import React from 'react'
-
 const Buttons = ({label, onClick,}) => {
+   
     const divStyle = {
         color: 'white',
         backgroundColor: '#E431B8',
@@ -10,7 +10,8 @@ const Buttons = ({label, onClick,}) => {
         width:'70px',
         padding:'10PX',
         left: '0',
-        cursor: 'pointer'
+        cursor: 'pointer',
+
     }
 
   return (

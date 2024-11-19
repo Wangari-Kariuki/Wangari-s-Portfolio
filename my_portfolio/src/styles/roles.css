@@ -1,0 +1,15 @@
+.role{
+    margin: 20px;
+    width: 400px;
+    height: 250px;
+    background-color: #53424d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+  }

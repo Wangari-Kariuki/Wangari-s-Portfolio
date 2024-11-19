@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.projects{
+    display: flex;
+    flex-direction: row;
+    justify-self:center;
+}
+.project{
+    margin: 20px;
+    width: 400px;
+    height: 250px;
+    background-color: #53424d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+}
+.projdesc {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    padding: 10px;
+} 
+.projdesc p {
+    border-right:1px dotted #E431B8;
+    padding-left: 10px;
+}
+.project-col-2{
+    padding: 7px;
+}
+.project h1 {
+    font-size: 20px;
+    text-shadow: 2px 2px 5px #E431B8 ;
+
+}
+.pname {
+    width: 150px;
+}
+.contact-details a{
+    color: #E431B8;
+    text-decoration: none;
+    display:inline-flex;
+    padding: 20px;
+   align-items: center;
+   justify-content: space-between;
+   font-family:'Edu+AU+VIC+WA+NT+Pre';
+
+
+}
+.contact-details img {
+    width: 50px;
+    background-color: aliceblue;
+    border-radius: 30%;
+    border: 1px solid #E431B8;
+    margin-right: 20px;
+}
+.layer a {
+    width: 55px;
+    height: 55px;
+    transition: transform 0.3s;
+}
+.layer a:hover {
+    transform: rotate(-35deg) skew(20deg);
+}
+.project a {
+    text-decoration: none;
+    color: #E431B8;
+}
+
+/* skill decotrations */
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-self:center;
+
+}
+.skill {
+    display: inline-flex;
+    flex-direction:row;
+    gap: 40px;
+    flex: auto;
+    
+}
+.skill button {
+    padding: 10px;
+    background-color: transparent;
+    color:#fff;
+    border-radius: 50%;
+}
+.typewriter{
+    overflow: hidden;
+    border-left: 3px solid #E431B8;
+    white-space: nowrap;
+    margin: auto;
+    animation: typing 3s steps(30, end), blink-caret 1.5s step-end infinite;
+}
+/* Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  /* Blinking cursor animation */
+@keyframes blink-caret {
+    from, to { border-color:transparent ; }
+    50% { border-color: black; }
+  }

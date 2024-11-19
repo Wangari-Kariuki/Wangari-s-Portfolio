@@ -13,13 +13,12 @@ export default function Overview() {
         <div className='topcontainer'>
                 <Topcontainer setCurrentContent={setCurrentContent} />
             </div>
-            <div className='wave-conatiner'>
-                <div className = 'wave'>hello</div></div>
+            
             <div className='bottomcontainer'>
                 <Flip_container content={currentContent} />
             </div>
         </div>
-            
-        </>
+        </> 
+        
     );
 }
