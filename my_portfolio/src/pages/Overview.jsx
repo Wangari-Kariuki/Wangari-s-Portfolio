@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/overview.css';
-import Flip_container from '../components/Project_container';
-import Topcontainer from '../components/Top_container';
+import Topcontainer from '../sections/Top_container';
+import Flipcontainer from '../sections/middle_container';
+
 import '../styles/wave.css'
+import Contact from '../components/contact';
 
 export default function Overview() {
     const [currentContent, setCurrentContent] = useState('');
@@ -11,12 +13,16 @@ export default function Overview() {
         <>
         <div className='body'>
         <div className='topcontainer'>
-                <Topcontainer setCurrentContent={setCurrentContent} />
+            <Topcontainer setCurrentContent={setCurrentContent} />
+        </div>
+            <div className='middlecontainer'>
+                <Flipcontainer content={currentContent} />
             </div>
-            
+
             <div className='bottomcontainer'>
-                <Flip_container content={currentContent} />
-            </div>
+        <Contact/>
+        </div>
+
         </div>
         </> 
         

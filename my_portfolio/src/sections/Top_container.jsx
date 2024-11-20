@@ -1,8 +1,7 @@
 import React from 'react';
-import image_icon from '../assets/imageicon_black.png';
 import me_icon from '../assets/2.jpg'
 import '../styles/overview.css';
-import Buttons from './Buttons';
+import Buttons from '../components/Buttons';
 import 'animate.css'
 
 export default function TopContainer({ setCurrentContent }) {
@@ -18,7 +17,7 @@ export default function TopContainer({ setCurrentContent }) {
                 </div>
                 <div className='text-box'>
                     <h1>Hello, my name is</h1>
-                    <h2 className= "animate__animated animate__bounce --animate-duration:infinate;" 
+                    <h2 className= "typewriter" 
                     >WANGARI</h2>
                 </div>
             </div>
@@ -26,7 +25,7 @@ export default function TopContainer({ setCurrentContent }) {
                 <Buttons label="Projects" onClick={() => handleClick('Projects')} />
                 <Buttons label="Skills" onClick={() => handleClick('Skills')} />
                 <Buttons label="Roles" onClick={() => handleClick('Roles')} />
-                <Buttons label="fun fact" onClick={() => handleClick('Roles')} />
+                <Buttons label="My story" onClick={() => handleClick('About')} />
             </div>
         </div>
     );

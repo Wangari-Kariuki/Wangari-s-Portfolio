@@ -3,17 +3,20 @@
     display: flex;
     flex-direction: row;
     justify-self:center;
+    width: auto;
+    padding: 20px;
+
 }
 .project{
     margin: 20px;
-    width: 400px;
+    width: 500px;
     height: 250px;
-    background-color: #53424d;
+    background-color: rgba(255, 0, 234, 0.3);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+       justify-content: center;
     align-items: center;
-    color: black;
+    color: rgb(243, 236, 236);
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -61,10 +64,10 @@
 .layer a {
     width: 55px;
     height: 55px;
-    transition: transform 0.3s;
+    transition: transform 1.5s;
 }
 .layer a:hover {
-    transform: rotate(-35deg) skew(20deg);
+    transform:rotate3d(0, 2, 0, 180deg);
 }
 .project a {
     text-decoration: none;
@@ -76,6 +79,7 @@
     display: flex;
     flex-direction: column;
     justify-self:center;
+    font-family:'Edu+AU+VIC+WA+NT+Pre' ;
 
 }
 .skill {
@@ -108,3 +112,23 @@
     from, to { border-color:transparent ; }
     50% { border-color: black; }
   }
+.about-container{
+   margin-left: 200px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+    width: 700px;
+    height: 500px;
+    background-image:linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('../assets//funme.jpg'); ;
+    background-size: contain;
+    color: rgb(250, 243, 243);
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family:'Edu+AU+VIC+WA+NT+Pre' ;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

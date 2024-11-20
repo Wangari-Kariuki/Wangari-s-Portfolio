@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Jacques+Francois+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-.body {
+body {
     /* max-width:fit-content;
     max-height: fit-content; */
-    overflow: hidden;
     background-color: black;
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
 
     /* display: flex;
@@ -65,16 +66,29 @@
     float:center;
 }
 
-.bottomcontainer{
+.middlecontainer{
+    margin: 0; /* Removes any margin */
+    padding: 0; /* Removes any padding */
+    display: block; /* Ensures it behaves as a block element */
+    position: relative; /* Ensures positioning doesn't affect surrounding layout */
+    box-sizing: border-box; /* Ensures padding and borders are included in dimensions */
     background-color:black;
-    box-sizing: border-box;
     border: 2px solid #E431B8;
     border-radius: 5px;
     color: #ffff;
     width: 100%;
+    height:fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottomcontainer{
+    color: #ffff;
 }
 .button {
     font-family:'Edu+AU+VIC+WA+NT+Pre', Open;
+    background-image: linear-gradient(to left,);
 }
 
 .imagebox{
