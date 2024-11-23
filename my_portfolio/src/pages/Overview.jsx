@@ -1,30 +1,39 @@
-import React, { useState } from 'react';
-import '../styles/overview.css';
-import Topcontainer from '../sections/Top_container';
-import Flipcontainer from '../sections/middle_container';
+import React, { useRef } from 'react';
+import TopContainer from '../sections/Top_container';
+import MiddleContainer from '../sections/middle_container';
+import Contact from '../components/contact'
 
-import '../styles/wave.css'
-import Contact from '../components/contact';
+export default function MainContainer() {
+  // Create refs for each section
+  const projectRef = useRef(null);
+  const skillsRef = useRef(null);
+  const roleRef = useRef(null);
+  const aboutRef = useRef(null);
 
-export default function Overview() {
-    const [currentContent, setCurrentContent] = useState('');
-    
-    return (
-        <>
-        <div className='body'>
-        <div className='topcontainer'>
-            <Topcontainer setCurrentContent={setCurrentContent} />
-        </div>
-            <div className='middlecontainer'>
-                <Flipcontainer content={currentContent} />
-            </div>
+  // Scroll to the referenced section
+  const handleClick = (sectionRef) => {
+    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
-            <div className='bottomcontainer'>
-        <Contact/>
-        </div>
+  return (
+    <>
+      {/* Pass refs and handleClick to TopContainer */}
+      <TopContainer
+        projectRef={projectRef}
+        skillsRef={skillsRef}
+        roleRef={roleRef}
+        aboutRef={aboutRef}
+        handleClick={handleClick}
+      />
 
-        </div>
-        </> 
-        
-    );
+      {/* Pass refs to MiddleContainer */}
+      <MiddleContainer
+        projectRef={projectRef}
+        skillsRef={skillsRef}
+        roleRef={roleRef}
+        aboutRef={aboutRef}
+      />
+      <Contact/>
+    </>
+  );
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import project1_video from '../assets/web_video.mp4'
-export default function Projects() {
+export default function Projects({handleClick}) {
   return (
     <>
     <div className="bottomcontainer"></div>

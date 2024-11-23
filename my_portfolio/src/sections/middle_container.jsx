@@ -1,51 +1,37 @@
 import React from 'react';
-import '../styles/bottomcontainer.css'
+import Projects from '../components/projects';
 import SkillsContent from '../components/Skills';
 import Roles from '../components/roles';
-import Projects from '../components/projects';
-import About from '../components/About';
+import About from '../components/About'
 
-export default function Flipcontainer({ content }) {
-    // Function to render content based on the currentContent state
-    const RenderContent = () => {
-        if (content === 'Projects') {
-            return ( 
-    
-                      <Projects/>
-              
-             
-            );
-        } 
-        else if (content === 'Skills') {
-            return (
-            
-                      <SkillsContent/>
-                
-          
-            );
-        } 
-        else if (content === 'Roles'){
-            return (
-                       <Roles/>
-               
-          
-            );
-        }
-        else if (content === 'About'){
-            return (
-                
-                      <About/>
-                
-          
-            );
-        }
-        // Default content if nothing matches
-    
-    
-        
-       
-    };
-
-    return <div className='flip_container'>{RenderContent()}</div>;
+export default function MiddleContainer({
+  projectRef,
+  skillsRef,
+  roleRef,
+  aboutRef,
+}) {
+  return (
+    <div>
+      <div className="middlecontainer">
+        <div ref={projectRef}>
+          <Projects />
+        </div>
+      </div>
+      <div className="middlecontainer">
+        <div ref={skillsRef}>
+          <SkillsContent />
+        </div>
+      </div>
+      <div className="middlecontainer">
+        <div ref={roleRef}>
+          <Roles />
+        </div>
+      </div>
+      <div className="middlecontainer">
+        <div ref={aboutRef}>
+          <About/>
+        </div>
+      </div>
+    </div>
+  );
 }
-

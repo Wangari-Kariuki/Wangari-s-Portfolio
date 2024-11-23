@@ -73,7 +73,7 @@ body {
     position: relative; /* Ensures positioning doesn't affect surrounding layout */
     box-sizing: border-box; /* Ensures padding and borders are included in dimensions */
     background-color:black;
-    border: 2px solid #E431B8;
+    border: 2px dotted #E431B8;
     border-radius: 5px;
     color: #ffff;
     width: 100%;
@@ -82,6 +82,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 .bottomcontainer{
     color: #ffff;
