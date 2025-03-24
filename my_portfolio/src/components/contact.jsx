@@ -4,8 +4,10 @@ import insta_icon from '../assets/instagram (1).png'
 import facebook_icon from '../assets/facebook (1).png'
 import github_icon from '../assets/github.png'
 import '../styles/bottomcontainer.css'
+import Title from './Title'
 export default function Contact() {
   return (
+    <>
     <div className='contact-details'>
     <h1>Reach me through:</h1>
     <p>
@@ -24,5 +26,6 @@ export default function Contact() {
     </div>
    
 </div>
+</>
   )
 }

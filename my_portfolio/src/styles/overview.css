@@ -87,11 +87,26 @@ body {
 .bottomcontainer{
     color: #ffff;
 }
-.button {
+.button1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-Color: #E431B8;
+    font-size: 15px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 5px; */
+    width:70px;
+    padding: 12px 35px;
+    left:0;
+    cursor: pointer;
     font-family:'Edu+AU+VIC+WA+NT+Pre', Open;
-    background-image: linear-gradient(to left,);
+    transition: all 0.5s;
 }
-
+.button1:hover{
+    background-color:rgb(238, 238, 223);
+    color: black;
+    
+}
 .imagebox{
     width: 200px;
     height: 200px;

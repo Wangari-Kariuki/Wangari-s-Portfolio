@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/bottomcontainer.css'; // Make sure to import your CSS file
+import Title from './Title';
 
 export default function SkillsContent() {
   const [activeSkill, setActiveSkill] = useState('');
@@ -10,6 +11,8 @@ export default function SkillsContent() {
   };
 
   return (
+    <>
+    <Title name = 'My skills'/>
     <div className='skills'>
       <div className='skill'>
         <button onClick={() => handleSkillClick('React.js')}>
@@ -44,5 +47,6 @@ export default function SkillsContent() {
         </p>
       </div>
     </div>
+    </>
   );
 }

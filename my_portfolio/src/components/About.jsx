@@ -1,8 +1,11 @@
 import React from 'react'
 import 'animate.css'
+import Title from './Title'
 
 export default function About() {
   return (
+    <>
+    <Title name={'My story'}/>
     <div className='about-container'>
         <p    className="about animate__animated animate__fadeIn" 
         style={{ '--animate-delay': '2s' }}>
@@ -11,5 +14,6 @@ export default function About() {
         learn and improve, driving me to become a better version of myself every day.
         </p>
     </div>
+    </>
   )
 }

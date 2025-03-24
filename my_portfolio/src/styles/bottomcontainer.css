@@ -20,6 +20,8 @@
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    box-shadow: 0 10px 20px rgba(105, 103, 103, 0.25);
+    /* box-shadow: offset-x offset-y blur-radius spread-radius #E431B8; */
 
 }
 .projdesc {

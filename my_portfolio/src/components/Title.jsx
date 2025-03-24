@@ -9,6 +9,6 @@ export default function Title({name}) {
 
     }
   return (
-    <div><button className='Title-button' style={buttonStyle}>{name}</button></div>
+    <div><h1 className='Title-button' style={buttonStyle}>{name}</h1></div>
   )
 }
