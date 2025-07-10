@@ -38,12 +38,12 @@ export default function SkillsContent() {
 
       <div className='skill'>
         <button onClick={() => handleSkillClick('Flutter')}>
-          <h1>Flutter</h1>
+          <h1>Cloud computing</h1>
         </button>
         <p
           className={`description ${activeSkill === 'Flutter' ? 'typewriter' : ''}`}
         >
-          Experienced in mobile app development with Flutter.
+         Experienced in AWS coud echnologies ad services, including EC2, S3, and Lambda.
         </p>
       </div>
     </div>

@@ -45,7 +45,7 @@ body {
     /* float:right */
     display: flex;
     flex-direction:column;
-    gap: 14px;
+    gap: 10px;
     padding: 10px;
     float: right;
 }
@@ -55,7 +55,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-between;
     border-right: 2px solid  #E431B8;
 
