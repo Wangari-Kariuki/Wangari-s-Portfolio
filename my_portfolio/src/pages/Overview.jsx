@@ -1,12 +1,13 @@
 import React, { useRef } from 'react';
 import TopContainer from '../sections/Top_container';
 import MiddleContainer from '../sections/middle_container';
-import Contact from '../components/contact'
+import Contact from '../components/contact';
+import NewComponent from '../components/new';
 
 export default function MainContainer() {
   // Create refs for each section
   const projectRef = useRef(null);
-  const skillsRef = useRef(null);
+  // const skillsRef = useRef(null);
   const roleRef = useRef(null);
   const aboutRef = useRef(null);
 
@@ -20,7 +21,7 @@ export default function MainContainer() {
       {/* Pass refs and handleClick to TopContainer */}
       <TopContainer
         projectRef={projectRef}
-        skillsRef={skillsRef}
+        // skillsRef={skillsRef}
         roleRef={roleRef}
         aboutRef={aboutRef}
         handleClick={handleClick}
@@ -28,8 +29,9 @@ export default function MainContainer() {
 
       {/* Pass refs to MiddleContainer */}
       <MiddleContainer
+        NewComponentRef={NewComponent}
         projectRef={projectRef}
-        skillsRef={skillsRef}
+        // skillsRef={skillsRef}
         roleRef={roleRef}
         aboutRef={aboutRef}
       />

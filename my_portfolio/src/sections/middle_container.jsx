@@ -1,7 +1,7 @@
 import React from 'react';
 import Projects from '../components/projects';
-import SkillsContent from '../components/Skills';
-import Roles from '../components/roles';
+// import SkillsContent from '../components/Skills';
+import Roles_Carousel from '../components/roles';
 import About from '../components/About'
 
 export default function MiddleContainer({
@@ -17,14 +17,14 @@ export default function MiddleContainer({
           <Projects />
         </div>
       </div>
-      <div className="middlecontainer">
+      {/* <div className="">
         <div ref={skillsRef}>
           <SkillsContent />
         </div>
-      </div>
+      </div> */}
       <div className="middlecontainer">
         <div ref={roleRef}>
-          <Roles />
+          <Roles_Carousel/>
         </div>
       </div>
       <div className="middlecontainer">

@@ -1,13 +1,15 @@
 import React from 'react'
+import AliceCarousel from "react-alice-carousel";
 import '../styles/roles.css'
 import daytona4 from '../assets/Daytona4.jpg'
 import devfest from '../assets/devfest1.jpg'
 import Title from './Title'
 //import daytona2 from '../assets/Daytona2.jpg'
 //import daytona3 from '../assets/Daytona3.jpg' 
-export default function Roles() {
+export default function Roles_Carousel() {
   return (
     <>
+  
     <Title name ={'My roles'}/>
     <div className="roles">
       
@@ -36,7 +38,18 @@ export default function Roles() {
         </div>
       </div>
 
+     <div className="role">
+        <h1>Student Fellow, Shamiri Institute</h1>
+        <h2>May 2025 - July 2025</h2>
+        <p>
+          Mentored and taught in over 75 students from 5 high schools in Muranga county. 
+        </p>
+        <div className="gallery">
+          <img src = {devfest} alt = 'devfest' className='img1'></img>
+        </div>
+      </div>
     </div>
+    
     </>
   )
 }

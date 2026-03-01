@@ -4,7 +4,7 @@
 body {
     /* max-width:fit-content;
     max-height: fit-content; */
-    background-color: black;
+    background-color: rgb(223, 209, 209);
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -14,18 +14,18 @@ body {
 }
 .topcontainer {
     height : 50vh;
-    background-color: black;
+    background-color: rgb(223, 209, 209);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content:center;
-    gap: 20px;
-    padding: 10px;
+    gap: 2px;
+    padding-right:5px;
+    padding-left: 0;
 }
 .text-box{
-
     flex-direction: column;
-    color: #ffff;
+    color: rgb(34, 8, 8);
     padding: 10px;
 }
 .text-box h2 {
@@ -41,29 +41,39 @@ body {
     transform: rotateY(180deg); /* Correct syntax: use 'deg' for degrees */
 }
 
+.cont-col-3{
+    /* float:right */
+    margin-top: 0%;
+    color: rgb(34, 8, 8);
+    margin-right: 0;
+    flex:3;
+    padding-left: 4%;
+    text-align: left;
+}
 .cont-col-2{
     /* float:right */
     display: flex;
-    flex-direction:column;
-    gap: 10px;
-    padding: 10px;
-    float: right;
+    padding: 50px;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    /* border-right:2px dotted  #E431B8 ; */
+    height: auto;
 }
 .cont-col-1{
     float:left;
-    padding:0;
+     padding: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-    justify-content: space-between;
-    border-right: 2px solid  #E431B8;
+    gap: 5px;
+    /* border-right:2px dotted  #E431B8 ; */
 
 }
 .imagebox{
     background-color: beige;
-    padding:50px;
-    float:center;
+    padding:40px;
 }
 
 .middlecontainer{
@@ -72,10 +82,10 @@ body {
     display: block; /* Ensures it behaves as a block element */
     position: relative; /* Ensures positioning doesn't affect surrounding layout */
     box-sizing: border-box; /* Ensures padding and borders are included in dimensions */
-    background-color:black;
+    background-color:rgb(223, 209, 209);
     border: 2px dotted #E431B8;
     border-radius: 5px;
-    color: #ffff;
+    color: rgb(34, 8, 8);
     width: 100%;
     height:fit-content;
     overflow: hidden;
@@ -88,23 +98,24 @@ body {
     color: #ffff;
 }
 .button1 {
-    display: flex;
-    justify-content: center;
-    color: white;
-    background-Color: #E431B8;
+    /* display: flex; */
+    /* justify-content: center; */
+    color: rgb(34, 8, 8);
+    background-Color: #f0d3e9;
     font-size: 15px;
-    border-radius: 10px;
-    /* box-shadow: 0 0 5px; */
+    border-radius: 8px;
+    border-color: transparent;
+    box-shadow: 0 0 5px;
     width:70px;
-    padding: 12px 35px;
+    padding: 40px 15px;
     left:0;
     cursor: pointer;
     font-family:'Edu+AU+VIC+WA+NT+Pre', Open;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 .button1:hover{
     background-color:rgb(238, 238, 223);
-    color: black;
+    color: rgb(34, 8, 8);
     
 }
 .imagebox{

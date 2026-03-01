@@ -1,52 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/bottomcontainer.css'; // Make sure to import your CSS file
 import Title from './Title';
 
 export default function SkillsContent() {
-  const [activeSkill, setActiveSkill] = useState('');
+  // const [activeSkill, setActiveSkill] = useState('');
 
-  // Function to handle skill button click
-  const handleSkillClick = (skill) => {
-    setActiveSkill(skill); // Update the active skill
-  };
+  // // Function to handle skill button click
+  // const handleSkillClick = (skill) => {
+  //   setActiveSkill(skill); // Update the active skill
+  // };
 
   return (
     <>
-    <Title name = 'My skills'/>
-    <div className='skills'>
-      <div className='skill'>
-        <button onClick={() => handleSkillClick('React.js')}>
-          <h1>React.js</h1>
-        </button>
-        <p
-          className={`description ${activeSkill === 'React.js' ? 'typewriter' : ''}`}
-        >
-          Skilled in React.js framework through project-based learning.
-        </p>
-      </div>
-
-      <div className='skill'>
-        <button onClick={() => handleSkillClick('Django')}>
-          <h1>Django</h1>
-        </button>
-        <p
-          className={`description ${activeSkill === 'Django' ? 'typewriter' : ''}`}
-        >
-          Skilled in building backend services using Django.
-        </p>
-      </div>
-
-      <div className='skill'>
-        <button onClick={() => handleSkillClick('Flutter')}>
-          <h1>Cloud computing</h1>
-        </button>
-        <p
-          className={`description ${activeSkill === 'Flutter' ? 'typewriter' : ''}`}
-        >
-         Experienced in AWS coud echnologies ad services, including EC2, S3, and Lambda.
-        </p>
-      </div>
-    </div>
+    <p> Computer Languages: Python, JavaScript, C++, HTML, CSS    </p>
+    <p>Linux operating system, Networking, AWS Cloud computing, React, Figma</p>
+    <p>Data Structures and Algorithms</p>
+    <p>Data analysis sing python libraries</p>
     </>
   );
 }
