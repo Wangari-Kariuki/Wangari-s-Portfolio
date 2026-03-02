@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import TopContainer from '../sections/Top_container';
 import MiddleContainer from '../sections/middle_container';
 import Contact from '../components/contact';
-import NewComponent from '../components/new';
 
 export default function MainContainer() {
   // Create refs for each section
@@ -29,7 +28,6 @@ export default function MainContainer() {
 
       {/* Pass refs to MiddleContainer */}
       <MiddleContainer
-        NewComponentRef={NewComponent}
         projectRef={projectRef}
         // skillsRef={skillsRef}
         roleRef={roleRef}

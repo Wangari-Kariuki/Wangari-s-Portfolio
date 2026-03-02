@@ -4,7 +4,7 @@ export default function Title({name}) {
     const buttonStyle = {
         padding: '10px 50px',
         backgroundColor: 'transparent',
-        color:'white',
+        color:'#2B0B0B',
         boxshadow: '2px 2px 2px pink'
 
     }

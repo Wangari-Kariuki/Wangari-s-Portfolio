@@ -1,139 +1,243 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-.projects{
-    display: flex;
-    flex-direction: row;
-    justify-self:center;
-    width: auto;
-    padding: 20px;
+/* -------------------- GLOBAL FIXES -------------------- */
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
 }
-.project{
-    margin: 20px;
-    width: 500px;
-    height: 250px;
+
+/* -------------------- PROJECT CARDS -------------------- */
+
+.project {
+    width: 100%;
+    max-width: 500px;
+    min-height: 250px;
+    padding: 15px;
     background-color: rgba(255, 0, 234, 0.3);
     display: flex;
     flex-direction: column;
-       justify-content: center;
+    justify-content: center;
     align-items: center;
-    color: rgb(243, 236, 236);
-    border-radius: 4px;
+    color: rgb(43, 11, 11);
+    border-radius: 6px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     box-shadow: 0 10px 20px rgba(105, 103, 103, 0.25);
-    /* box-shadow: offset-x offset-y blur-radius spread-radius #E431B8; */
-
 }
+
+/* -------------------- PROJECT DESCRIPTION -------------------- */
+
 .projdesc {
     display: flex;
-    flex-direction: row; 
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
     padding: 10px;
-} 
+}
+
 .projdesc p {
-    border-right:1px dotted #E431B8;
-    padding-left: 10px;
+    border-right: none;
+    padding: 5px;
 }
-.project-col-2{
-    padding: 7px;
-}
-.project h1 {
-    font-size: 20px;
-    text-shadow: 2px 2px 5px #E431B8 ;
-
-}
-.pname {
-    width: 150px;
-}
-.contact-details a{
-    color: #E431B8;
-    text-decoration: none;
-    display:inline-flex;
-    padding: 20px;
-   align-items: center;
-   justify-content: space-between;
-   font-family:'Edu+AU+VIC+WA+NT+Pre';
-
-
-}
-.contact-details{
-    color: #fff;
-}
-.contact-details img {
-    width: 50px;
-    background-color: aliceblue;
-    border-radius: 30%;
-    border: 1px solid #E431B8;
-    margin-right: 20px;
-}
-.layer a {
-    width: 55px;
-    height: 55px;
-    transition: transform 1.5s;
-}
-.layer a:hover {
-    transform:rotate3d(0, 2, 0, 180deg);
-}
-.project a {
-    text-decoration: none;
-    color: #E431B8;
-}
-
-/* skill decotrations */
-.skills{
-    display: flex;
-    flex-direction: column;
-    justify-self:center;
-    font-family:'Edu+AU+VIC+WA+NT+Pre' ;
-
-}
-.skill {
-    display: inline-flex;
-    flex-direction:row;
-    gap: 40px;
-    flex: auto;
+.project-col-3{
+    margin: 0;
+    white-space: nowrap;
     
 }
-.skill button {
-    padding: 10px;
-    background-color: transparent;
-    color:#fff;
-    border-radius: 50%;
+
+/* -------------------- PROJECT TITLE -------------------- */
+
+.project h1 {
+    font-size: clamp(16px, 3vw, 20px);
+    text-align: center;
 }
-.typewriter{
-    overflow: hidden;
-    border-left: 3px solid #E431B8;
+
+/* -------------------- CONTACT DETAILS -------------------- */
+
+.contact-details {
+    color: rgb(43, 11, 11);
+    display: flex;
+    flex-wrap: wrap;            /* Allow wrapping into multiple rows */
+    justify-content: center;     /* Center horizontally */
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 1200px;          /* Keep content constrained on large screens */
+}
+
+.contact-details h1 {
+    font-size: 18px;
+    width: 100%;                /* Make heading span full row */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    margin: 0;
     white-space: nowrap;
-    margin: auto;
-    animation: typing 3s steps(30, end), blink-caret 1.5s step-end infinite;
 }
-/* Typing animation */
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-  }
-  /* Blinking cursor animation */
-@keyframes blink-caret {
-    from, to { border-color:transparent ; }
-    50% { border-color: black; }
-  }
-.about-container{
-   margin-left: 200px;
-   margin-top: 30px;
-   margin-bottom: 30px;
-    width: 700px;
-    height: 500px;
-    background-image:linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('../assets//funme.jpg'); ;
-    background-size: contain;
-    color: rgb(250, 243, 243);
-    border-radius: 4px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    border-radius: 5px;
-    font-family:'Edu+AU+VIC+WA+NT+Pre' ;
+
+/* Icons Row */
+.layer {
+    display: flex;
+    flex-wrap: wrap;            /* Allow icons to wrap on smaller screens */
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
-.about-container{
+.layer a { 
+width: 55px; height: 55px; 
+transition: transform 1.5s;
+ } 
+.layer a:hover {
+ transform:rotate3d(0, 2, 0, 180deg);
+ }
+.contact-details a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-details img {
+    width: 36px;
+    transition: transform 0.3s ease;
+}
+
+.contact-details img:hover {
+    transform: scale(1.1);
+}
+
+/* -------------------- COPYRIGHT -------------------- */
+
+.copyright {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: rgb(43, 11, 11);
+    font-family: 'Edu AU VIC WA NT Pre';
+}
+/* -------------------- SKILLS -------------------- */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill button {
+    padding: 10px 14px;
+}
+
+/* -------------------- TYPEWRITER -------------------- */
+
+.typewriter{ 
+overflow: hidden;
+ border-left: 3px solid #E431B8;
+ white-space: nowrap; margin: auto;
+ animation: typing 3s steps(30, end), blink-caret 1.5s step-end infinite; }
+
+ /* Typing animation */ 
+ @keyframes typing { from { width: 0; } to { width: 100%; } } 
+ /* Blinking cursor animation */ 
+ @keyframes blink-caret { from, to { border-color:transparent ; } 50% { border-color: black; } }
+/* -------------------- ABOUT CONTAINER -------------------- */
+
+.about-container {
+    margin: 30px auto;
+    width: 55%;
+    max-width: 800px;
+    min-height: 300px;
+    background-image: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), 
+                      url('../assets/funme.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .project {
+        max-width: 100%;
+    }
+
+    .about-container {
+        width: 95%;
+        height: auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .projects {
+        padding: 10px;
+    }
+
+    .project {
+        font-size: 13px;
+    }
+
+    .contact-details a {
+        padding: 8px;
+    }
+
+    .contact-details img {
+        width: 35px;
+    }
+
+    .skill {
+        gap: 10px;
+    }
+
+    .about-container {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+/* ============ GLOBAL CENTERING FIX ============ */
+
+/* Center all main layout sections */
+.projects,
+.about-container,
+.contact-details,
+.copyright,
+.skills {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+/* Make sure containers stay centered inside body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Prevent overflow stretching */
+.projects,
+.contact-details,
+.skills {
+    width: 100%;
 }

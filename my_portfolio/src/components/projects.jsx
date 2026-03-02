@@ -17,9 +17,11 @@ export default function Projects({handleClick}) {
           has boosted their visibility by 30%.
             </p>
            <div className='project-col-2'> <video className='video' autoPlay loop muted
-           style={{ width: '120px', height: '100px', objectFit: 'cover', border: '1px solid black'}}
+           style={{ width: '220px', height: '100px', objectFit: 'cover', border: '1px solid black'}}
             ><source src = {lebed_video} type='video/mp4' ></source></video>
-            <a href="https://lebed-ih3e.vercel.app/">www.Lebed.com</a>
+            </div>
+            <div className='project-col-3'>
+                <a href="https://lebed-ih3e.vercel.app/">www.Lebed.com</a>
             </div>
             
             </div>
@@ -37,11 +39,12 @@ export default function Projects({handleClick}) {
             user experience and streamlined compliance management processes.
             </p>
            <div className='project-col-2'> <video className='video' autoPlay loop muted
-           style={{ width: '120px', height: '100px', objectFit: 'cover', border: '1px solid black'}}
+           style={{ width: '220px', height: '100px', objectFit: 'cover', border: '1px solid black'}}
             ><source src = {project1_video} type='video/mp4' ></source></video>
-            <a href="#">Datashield</a>
             </div>
-            
+            <div>
+              <a className='project-col-3' href="#">Datashield</a>
+            </div>
             </div>
             
         </div>

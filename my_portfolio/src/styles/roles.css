@@ -1,64 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-.roles{
+
+.roles {
+  color: rgb(43, 11, 11);
   display: flex;
-  gap: 20px; /* Space between roles */
-  display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;          /* Allow wrapping */
   justify-content: center;
-  width: auto;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-
-}
-.role{
-  display: flex;
-  flex-direction: column; /* Arrange content vertically */
-  align-items: center; /* Center content horizontally */
-  text-align: center; /* Center text */
-  font-family:'Edu+AU+VIC+WA+NT+Pre' ;
-  padding: 15px;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  box-shadow: 2px 2px 4px 4px #E431B8;
-  margin: 40px;
-  overflow:auto;
-}
-.role h1{
-    font-size: 20px;
-}
-.role h2{
-  font-size: 10px;
-}
-.role img{
-  margin-bottom: 0;
+  gap: 20px;
   width: 100%;
-  height: 400px; 
-  background-position: fit;
-  /* border: 2px solid white; */
-  border-radius: 5px;
-  margin: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
 }
-/* .role .img2 {
-  height: 150px;
-  margin: 10px;
-  border: 2px solid white;
-}
-.role .img3{
-  height: 150px;
-  margin: 10px;
-  border: 2px solid white;
 
-} */
- .gallery img {
-  max-width: 100%; /* Ensure images fit within their container */
-  max-height: 200px; /* Set a max height for uniformity */
-  object-fit: contain; /* Scale images to fit without cropping */
-  border-radius: 5px; /* Optional rounded corners for images */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
- }
+/* ---------------- ROLE CARD ---------------- */
+
+.role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px 4px #E431B8;
+  margin: 15px;
+  overflow: hidden;
+
+  width: 100%;
+  max-width: 320px;         /* Desktop card width */
+}
+
+/* ---------------- TEXT ---------------- */
+
+.role h1 {
+  font-size: clamp(16px, 2.5vw, 20px);
+}
+
+.role h2 {
+  font-size: clamp(10px, 2vw, 12px);
+}
+
+/* ---------------- IMAGES ---------------- */
+
+.role img {
+  width: 100%;
+  height: auto;             /* Prevent distortion */
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* ---------------- GALLERY ---------------- */
+
 .gallery {
   display: flex;
-  justify-content: center; /* Center the images horizontally */
-  margin-top: 15px; /* Space above the image */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* Small laptops */
+@media (max-width: 1024px) {
+  .role {
+    max-width: 280px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .roles {
+    gap: 15px;
+  }
+
+  .role {
+    max-width: 90%;
+  }
+
+  .role img {
+    max-height: 280px;
+  }
+}
+
+/* Mobile (iPhones) */
+@media (max-width: 480px) {
+  .roles {
+    padding: 10px;
+  }
+
+  .role {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .role img {
+    max-height: 220px;
+  }
+
+  .gallery img {
+    max-width: 90px;
+  }
 }

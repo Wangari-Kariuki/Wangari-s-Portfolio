@@ -1,14 +1,8 @@
 import React from 'react';
 import '../styles/bottomcontainer.css'; // Make sure to import your CSS file
-import Title from './Title';
-
 export default function SkillsContent() {
-  // const [activeSkill, setActiveSkill] = useState('');
 
-  // // Function to handle skill button click
-  // const handleSkillClick = (skill) => {
-  //   setActiveSkill(skill); // Update the active skill
-  // };
+
 
   return (
     <>
